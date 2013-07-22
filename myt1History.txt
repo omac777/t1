@@ -1,0 +1,26 @@
+ 2139  mkdir ~/Code/go/src
+ 2140  mkdir -p ~/Code/go/src
+ 2141  cd ~/Code/go/src
+ 2142  mkdir -p github.com/omac777/gostbook
+ 2145  git config --global core.editor emacs
+ 2148  git config --global merge.tool meld
+ 2149  mkdir -p github.com/omac777/t1
+ 2150  cd github.com/omac777/t1/
+ 2156  export GOPATH=/home/loongson/Code/go
+ 2157  git init
+ 2159  go build
+ 2161  ./t1
+ 2173  emacs .gitignore &
+ 2175  git add .
+ 2176  git commit -m 'initial commit for t1'
+ 2177  git status
+ 2178  git log
+ 2180  emacs README &
+ 2181  git add README
+# any file you add, it needs to be committed first, then pushed to remote.
+# you need to create the t1 repository on github before adding it as a remote
+ 2186  git remote add origin https://github.com/omac777/t1.git
+ 2191  git pull origin master
+ 2192  git commit -m 'added README for t1'
+ 2194  git pull origin master
+ 2200  git push origin master
