@@ -24,3 +24,31 @@
  2192  git commit -m 'added README for t1'
  2194  git pull origin master
  2200  git push origin master
+ 2213  git add myt1History.txt -f
+ 2214  git commit myt1History.txt -m 'adding a history of all gitcommands used'
+ 2215  git push origin master
+ 2216  git pull origin master
+ 2217  git push origin master
+ 2344  go get github.com/zeebo/gostbook
+ 2377  go get code.google.com/p/gorilla/pat
+ 2378  go get code.google.com/p/gorilla/sessions
+ 2379  go get labix.org/v2/mgo
+ 2380  go get labix.org/v2/mgo/bson
+ 2385  go get thegoods.biz/httpbuf
+ 2387  go get code.google.com/p/go.crypto/bcrypt
+ 2425  git add context.go
+ 2426  git add entry.go
+ 2427  git add handlers.go
+ 2428  git add http.go
+ 2429  git add template.go
+ 2430  git add user.go
+ 2432  cp main.go main.goNotForGitHub
+ 2435  git commit 
+ 2436  git push origin master
+ 2438  git push origin master
+ 2439  git pull origin master
+ 2441  git push origin master
+ 2442  git commit main.go
+ 2443  git push origin master
+ 2448  git commit README
+ 2449  git push origin master
