@@ -1,3 +1,29 @@
-just testing adding t1 project to github.
+This project is gostbook modified:
+-to use mongodb authentication to connect with mongodb
+-to serve on a TLS connection (https://yourserver:5555)
+  
+If you want to run this
+1)edit main.go:
+-change the line to use your mongodb login user/password
+loginerr := mydb.Login("blah","blahpassword")
 
+-change the line to use your with your public cert and private key.
+http.ListenAndServeTLS(":5555", "/home/youruser/yourpubliccert.crt", "/home/youruser/yourprivatekey.key"
 
+2)run the following commands:
+export GOPATH=/home/youruser/Code/go
+go get code.google.com/p/gorilla/pat
+go get code.google.com/p/gorilla/sessions
+go get labix.org/v2/mgo
+go get labix.org/v2/mgo/bson
+go get thegoods.biz/httpbuf
+go get code.google.com/p/go.crypto/bcrypt
+go build .
+
+NOTE: this will build the executable t1
+
+3)run the application:
+./t1
+
+4)from your web browser, go to this url: 
+https://yourserver:5555
